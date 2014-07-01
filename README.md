@@ -135,7 +135,7 @@ To use a shell script for provisioning you have to tell Vagrant about it in your
 
 You're advised to submodule this repository into your own:
 
-    $ git submodule add https://github.com/boof/vagrant.sh.git .sh
+    $ git submodule add https://github.com/fork/vagrant.sh.git .sh
 
 To load the modules just source the generic module into your provisioning script (provision.sh) and use the provision function:
 

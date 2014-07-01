@@ -74,7 +74,15 @@ Modules
 
 - **wordpress**
 
-  This module sets up (deploys to in /vagrant/wordpress if no wp-config.php can be found) WordPress.
+  This module sets up (deploys to /vagrant/wordpress if no wp-config.php can be found) WordPress.
+
+- **drupal**
+
+  This module sets up (deploys to /vagrant/drupal if no web.config can be found) Drupal.
+  
+  To install Drupal
+
+        install-drupal <version> (e.g. 8.0-alpha12)
 
 - **ruby**
 

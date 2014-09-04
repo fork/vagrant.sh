@@ -28,7 +28,7 @@ if [[ -z "$config" ]]; then
     }" $config
 
     mkdir $DEST 2>/dev/null
-    cp -r $SOURCE/* $DEST
+    cp -r $SOURCE/. $DEST
     config=$DEST/wp-config.php
     rm -r $TMPDIR
 fi

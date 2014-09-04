@@ -21,7 +21,7 @@ function install-drupal () {
         local SOURCE="${TMPDIR}/drupal-${version}"
 
         mkdir $DEST 2>/dev/null
-        cp -r $SOURCE/* $DEST
+        cp -r $SOURCE/. $DEST
         rm -r $TMPDIR
 
         service apache2 restart >/dev/null

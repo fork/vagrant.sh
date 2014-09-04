@@ -6,7 +6,6 @@ provision apt
 function setup-apache () {
     local mpm=${1:-worker}
 
-    set-docroot ${2:-/vagrant/public}
     has apache2-mpm-$mpm || {
         echo "Setting up Apache HTTP server... "
         apt-install apache2-mpm-$mpm
@@ -23,6 +22,7 @@ function setup-apache () {
 
         service apache2 restart >/dev/null
     }
+    set-docroot ${2:-/vagrant/public}
 }
 
 function set-docroot () {
